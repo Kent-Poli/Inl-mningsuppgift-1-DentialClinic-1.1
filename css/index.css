@@ -211,7 +211,6 @@ aside p {
     padding: 10.375rem 12% 9.375rem 12%;
 }
 
-
 .our-servise .h1 {
     display: flex;
     flex-direction: column;
@@ -229,9 +228,6 @@ aside p {
     margin: 1.875rem 0 4.2rem 0;
     border-bottom: 4px solid var(--green-color);
 }
-
-
-
 
 
 /* -----------  appointment  ----------- */
@@ -302,17 +298,7 @@ footer span {
     font-family: Roboto;
 }
 
-@media screen and (max-width: 929px) {
-    .our-servise .row {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .our-servise .border {
-        width: 100%;
-    }
-
-}
 
 /* -----------  Media Queries max-width: 1600px  ----------- */
 
@@ -401,11 +387,40 @@ footer span {
 
 }
 
+@media screen and (max-width: 1024px) {
+    .our-servise .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .our-servise .border,
+    .about-us .border {
+        width: 100%;
+    }
+
+
+}
+
 @media screen and (max-width: 780px) {
     .about-us {
         display: none;
     }
 
+    .appointment {
+        padding-top: 2rem;
+    }
 
+    .appointment h3 {
+        font-size: 1.5rem;
+    }
 
+    .appointment button {
+        padding: 0.8rem 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .showcase h1,
+    .our-servise .h1 {
+        font-size: var(--text-size-h2);
+    }
 }
